@@ -13,4 +13,7 @@ Scan a folder for `.evtx` files, summarize total count/size, and list the larges
 ```bash
 go run ./cmd/evtx-counter/main.go -path "C:\Windows\System32\winevt\Logs" -top 10
 
+### IR Focused Report (Security + PowerShell)
 
+```powershell
+evtx-counter.exe -path "C:\Windows\System32\winevt\Logs" -ir ir-report.csv
